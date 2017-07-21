@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "d8900d1dfb030a27b0038386ed3c4a30"
+build_time: [553958523, 479128000]
+inputs:
+  "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/CocoaSwiftPlayer/ViewController.swift": [553958517, 0]
+  "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/CocoaSwiftPlayer/AppDelegate.swift": [553958517, 0]
