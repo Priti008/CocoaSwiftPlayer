@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		132D9FCDADBD5AF20B7625D9 /* Pods_CocoaSwiftPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA171365BBA2136FF125C45 /* Pods_CocoaSwiftPlayer.framework */; };
+		FE63157A1F25ED0100EBDF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6315791F25ED0100EBDF19 /* ViewController.swift */; };
 		FE7CAAF71F2237750066FBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CAAF61F2237750066FBF1 /* AppDelegate.swift */; };
-		FE7CAAF91F2237750066FBF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CAAF81F2237750066FBF1 /* ViewController.swift */; };
 		FE7CAAFB1F2237760066FBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7CAAFA1F2237760066FBF1 /* Assets.xcassets */; };
 		FE7CAAFE1F2237760066FBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7CAAFC1F2237760066FBF1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +18,9 @@
 		1E36534D6E3C924E4D1F1369 /* Pods-CocoaSwiftPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaSwiftPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaSwiftPlayer/Pods-CocoaSwiftPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		9C18C0A35C12729B9F3B5FF7 /* Pods-CocoaSwiftPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaSwiftPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaSwiftPlayer/Pods-CocoaSwiftPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		BCA171365BBA2136FF125C45 /* Pods_CocoaSwiftPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaSwiftPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6315791F25ED0100EBDF19 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE7CAAF31F2237750066FBF1 /* CocoaSwiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaSwiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7CAAF61F2237750066FBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE7CAAF81F2237750066FBF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE7CAAFA1F2237760066FBF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE7CAAFD1F2237760066FBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE7CAAFF1F2237760066FBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +55,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE6315751F25ED0100EBDF19 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FE6315761F25ED0100EBDF19 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FE6315771F25ED0100EBDF19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE6315781F25ED0100EBDF19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE6315791F25ED0100EBDF19 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		FE7CAAEA1F2237750066FBF1 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +105,11 @@
 		FE7CAAF51F2237750066FBF1 /* CocoaSwiftPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				FE6315751F25ED0100EBDF19 /* Helpers */,
+				FE6315761F25ED0100EBDF19 /* Managers */,
+				FE6315771F25ED0100EBDF19 /* Models */,
+				FE6315781F25ED0100EBDF19 /* ViewControllers */,
 				FE7CAAF61F2237750066FBF1 /* AppDelegate.swift */,
-				FE7CAAF81F2237750066FBF1 /* ViewController.swift */,
 				FE7CAAFA1F2237760066FBF1 /* Assets.xcassets */,
 				FE7CAAFC1F2237760066FBF1 /* Main.storyboard */,
 				FE7CAAFF1F2237760066FBF1 /* Info.plist */,
@@ -207,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE7CAAF91F2237750066FBF1 /* ViewController.swift in Sources */,
+				FE63157A1F25ED0100EBDF19 /* ViewController.swift in Sources */,
 				FE7CAAF71F2237750066FBF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +397,7 @@
 				FE7CAB041F2237760066FBF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
