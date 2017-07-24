@@ -1,0 +1,82 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/Pods_CocoaSwiftPlayer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-CocoaSwiftPlayer-umbrella.h",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/Pods/Target Support Files/Pods-CocoaSwiftPlayer/Pods-CocoaSwiftPlayer-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_CocoaSwiftPlayer-Swift.h",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/Pods_CocoaSwiftPlayer.framework/Versions/A/Headers/Pods_CocoaSwiftPlayer-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/Pods_CocoaSwiftPlayer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Intermediates/Pods.build/Debug/Pods-CocoaSwiftPlayer.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/Realm/Realm.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Realm-Swift.h",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/Realm/Realm.framework/Versions/A/Headers/Realm-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/Realm/Realm.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Intermediates/Pods.build/Debug/Realm.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/RealmSwift/RealmSwift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RealmSwift-Swift.h",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/RealmSwift/RealmSwift.framework/Versions/A/Headers/RealmSwift-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RealmSwift-umbrella.h",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Products/Debug/RealmSwift/RealmSwift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/pritisuthar/Documents/Projects/Learning_Demos/CocoaSwiftPlayer/DerivedData/CocoaSwiftPlayer/Build/Intermediates/Pods.build/Debug/RealmSwift.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

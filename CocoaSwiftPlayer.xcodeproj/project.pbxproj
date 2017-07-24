@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132D9FCDADBD5AF20B7625D9 /* Pods_CocoaSwiftPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA171365BBA2136FF125C45 /* Pods_CocoaSwiftPlayer.framework */; };
 		FE7CAAF71F2237750066FBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CAAF61F2237750066FBF1 /* AppDelegate.swift */; };
 		FE7CAAF91F2237750066FBF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CAAF81F2237750066FBF1 /* ViewController.swift */; };
 		FE7CAAFB1F2237760066FBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7CAAFA1F2237760066FBF1 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E36534D6E3C924E4D1F1369 /* Pods-CocoaSwiftPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaSwiftPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaSwiftPlayer/Pods-CocoaSwiftPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		9C18C0A35C12729B9F3B5FF7 /* Pods-CocoaSwiftPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaSwiftPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaSwiftPlayer/Pods-CocoaSwiftPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA171365BBA2136FF125C45 /* Pods_CocoaSwiftPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaSwiftPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7CAAF31F2237750066FBF1 /* CocoaSwiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaSwiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7CAAF61F2237750066FBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE7CAAF81F2237750066FBF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132D9FCDADBD5AF20B7625D9 /* Pods_CocoaSwiftPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3DF7778F7970F196D44210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCA171365BBA2136FF125C45 /* Pods_CocoaSwiftPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1B4276D47CF80F2B9813D12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C18C0A35C12729B9F3B5FF7 /* Pods-CocoaSwiftPlayer.debug.xcconfig */,
+				1E36534D6E3C924E4D1F1369 /* Pods-CocoaSwiftPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE7CAAEA1F2237750066FBF1 = {
 			isa = PBXGroup;
 			children = (
 				FE7CAAF51F2237750066FBF1 /* CocoaSwiftPlayer */,
 				FE7CAAF41F2237750066FBF1 /* Products */,
+				F1B4276D47CF80F2B9813D12 /* Pods */,
+				1C3DF7778F7970F196D44210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE7CAB021F2237760066FBF1 /* Build configuration list for PBXNativeTarget "CocoaSwiftPlayer" */;
 			buildPhases = (
+				5624AB3249F5F156B13D6CCC /* [CP] Check Pods Manifest.lock */,
 				FE7CAAEF1F2237750066FBF1 /* Sources */,
 				FE7CAAF01F2237750066FBF1 /* Frameworks */,
 				FE7CAAF11F2237750066FBF1 /* Resources */,
+				FF3D1FA7228CB4C2CF634E5B /* [CP] Embed Pods Frameworks */,
+				8EECE16A403EE586CD264196 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +153,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5624AB3249F5F156B13D6CCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8EECE16A403EE586CD264196 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaSwiftPlayer/Pods-CocoaSwiftPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF3D1FA7228CB4C2CF634E5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaSwiftPlayer/Pods-CocoaSwiftPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE7CAAEF1F2237750066FBF1 /* Sources */ = {
@@ -243,6 +318,7 @@
 		};
 		FE7CAB031F2237760066FBF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C18C0A35C12729B9F3B5FF7 /* Pods-CocoaSwiftPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -257,6 +333,7 @@
 		};
 		FE7CAB041F2237760066FBF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E36534D6E3C924E4D1F1369 /* Pods-CocoaSwiftPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
